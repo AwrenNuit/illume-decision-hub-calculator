@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-import './BreakEven.css';
+import '../Calculators.css';
 
 function BreakEven() {
   const [price, setPrice] = useState('');
@@ -17,7 +17,9 @@ function BreakEven() {
   },[hours, rate, raw, part, indirect, setPrice, type, sales])
 
   return (
-    <div className='break-even'>
+    <center>
+    <div className='calc-container'>
+    <h1 className="main-heading">Break Even</h1>
       <form>
         <input 
           type="radio" 
@@ -73,6 +75,7 @@ function BreakEven() {
         You must sell your product at a price higher than {price.toLocaleString("en-US", {style: "currency", currency: 'USD'})} to make a profit.
       </p>
     </div>
+    </center>
   );
 }
 

@@ -1,13 +1,13 @@
-.lever-direct-cost-mask, l.ever-indirect-cost-mask, .lever-revenue-mask {
+.direct-cost-mask, l.ever-indirect-cost-mask, .revenue-mask {
   width: 30px;
 }
 
-.lever-main-heading {
+.main-heading {
   text-decoration: underline;
   margin-bottom: 20px;
 }
 
-.lever-label-direct-cost {
+.label-direct-cost {
   position: relative;
   color: lightgrey;
   order: -1;
@@ -18,7 +18,7 @@
   transform: translate(-60px, 23px);
 }
 
-.lever-label-indirect-cost {
+.label-indirect-cost {
   position: relative;
   color: lightgrey;
   order: -1;
@@ -29,7 +29,7 @@
   transform: translate(-60px, 23px);
 }
 
-.lever-label-revenue {
+.label-revenue {
   position: relative;
   color: lightgrey;
   order: -1;
@@ -40,36 +40,36 @@
   transform: translate(-60px, 23px);
 }
 
-.lever-result {
+.result {
   border: 4px solid black;
   padding: 10px;
   margin-top: 20px;
   width: 50%;
 }
 
-.lever-result-heading {
+.result-heading {
   text-decoration: underline;
   margin-bottom: 10px;
 }
 
-.lever-text-field-container {
+.text-field-container {
   /* padding-top: 10px;
   display: flex;
   flex-direction: column; */
   margin-bottom: 10px;
 }
 
-.lever-text-field-direct-cost, .lever-text-field-indirect-cost, .lever-text-field-revenue {
+.text-field-direct-cost, .text-field-indirect-cost, .text-field-revenue {
   left: 30px;
 }
 
-.lever-text-field-direct-cost:focus + .lever-label-direct-cost {
+.text-field-direct-cost:focus + .label-direct-cost {
   color: #f0aa42;
   font-size: 0.8em;
   transform: translate(-60px, 6px);
 }
 
-.profit-lever-container {
+.calc-container {
   background-color: white;
   box-shadow: 5px 5px 10px grey;
   padding: 20px;

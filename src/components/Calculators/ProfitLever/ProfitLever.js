@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
-import './ProfitLever.css';
+import '../Calculators.css';
 
 function ProfitLever() {
 
@@ -27,56 +27,56 @@ function ProfitLever() {
     // just single unit right now
     
     <center>
-      <div className="profit-lever-container">
-        <h1 className="lever-main-heading">Define Profit Levers</h1>
+      <div className="calc-container">
+        <h1 className="main-heading">Define Profit Levers</h1>
         <div>
           <form>
             <div>
               <span>What are your Direct Costs?</span>
-                <div className="lever-text-field-container">
+                <div className="text-field-container">
                   <input 
-                    className="text-field lever-text-field-direct-cost" 
+                    className="text-field text-field-direct-cost" 
                     type="number" 
                     value={directCost}
                     onChange={(event)=>setDirectCost(event.target.value)} 
                   />
-                  <label className="lever-label-direct-cost">direct costs</label>
+                  <label className="label-direct-cost">direct costs</label>
                   {/* <div className="text-field-mask lever-direct-cost-mask"></div> */}
                 </div>
             </div>
 
             <div>
               <span>What are your Indirect Costs?</span>
-                <div className="lever-text-field-container">
+                <div className="text-field-container">
                   <input 
-                    className="text-field lever-text-field-indirect-cost" 
+                    className="text-field text-field-indirect-cost" 
                     type="number"
                     value={indirectCost}
                     onChange={(event)=>setIndirectCost(event.target.value)}
                     />
-                  <label className="lever-label-indirect-cost">indirect costs</label>
+                  <label className="label-indirect-cost">indirect costs</label>
                   {/* <div className="text-field-mask lever-indirect-cost-mask"></div> */}
                 </div>
             </div>
 
             <div>
               <span>What is your Revenue?</span>
-                <div className="lever-text-field-container">
+                <div className="text-field-container">
                   <input 
-                    className="text-field lever-text-field-revenue" 
+                    className="text-field text-field-revenue" 
                     type="number" 
                     value={revenue}
                     onChange={(event)=>setRevenue(event.target.value)}
                   />
-                  <label className="lever-label-revenue">revenue</label>
+                  <label className="label-revenue">revenue</label>
                   {/* <div className="text-field-mask lever-revenue-mask"></div> */}
                 </div>
             </div>
 
           </form>
         </div>
-        <div className="lever-result">
-          <h3 className="lever-result-heading">Result</h3>
+        <div className="result">
+          <h3 className="result-heading">Result</h3>
           <p>A 1% improvement in price will deliver {price.toFixed(1)}% improvement in profit.</p> 
           {/* <p>This translates to $x more profit in your pocket per year</p> */}
           <br />

@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import BreakEven from '../BreakEven/BreakEven';
-import PriceSetting from '../PriceSetting/PriceSetting';
-import ProfitLever from '../ProfitLever/ProfitLever';
+import BreakEven from '../Calculators/BreakEven/BreakEven';
+import PriceSetting from '../Calculators/PriceSetting/PriceSetting';
+import ProfitLever from '../Calculators/ProfitLever/ProfitLever';
 import Login from '../Login/Login';
 import Stepper from '../Stepper/Stepper';
 
