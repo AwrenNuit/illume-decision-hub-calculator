@@ -9,9 +9,9 @@ import Stepper from '../Stepper/Stepper';
 function App() {
   return (
     <div className="App">
+      <Login />
       <BreakEven/>
       <PriceSetting/>
-      <Login />
       <ProfitLever />
       <Stepper />
     </div>
